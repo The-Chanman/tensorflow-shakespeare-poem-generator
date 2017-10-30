@@ -42,12 +42,16 @@ pythonA1 = "checkpoints/rnn_train_1495458538-1200000"  # some function calls wit
 pythonA2 = "checkpoints/rnn_train_1495458538-10200000"  # starts looking Tensorflow Python, nested () and [] not perfect yet
 pythonB10 = "checkpoints/rnn_train_1495458538-201600000"  # can even recite the Apache license
 
+testing = "checkpoints/rnn_train_1508956033-51000000"
+
 # use topn=10 for all but the last one which works with topn=2 for Shakespeare and topn=3 for Python
-author = shakespeareB10
+#author = shakespeareB10
+author = testing
 
 ncnt = 0
 with tf.Session() as sess:
-    new_saver = tf.train.import_meta_graph('checkpoints/rnn_train_1495455686-0.meta')
+#    new_saver = tf.train.import_meta_graph('checkpoints/rnn_train_1495455686-0.meta')
+    new_saver = tf.train.import_meta_graph('checkpoints/rnn_train_1508956033-0.meta')
     new_saver.restore(sess, author)
     x = my_txtutils.convert_from_alphabet(ord("L"))
     x = np.array([[x]])  # shape [BATCHSIZE, SEQLEN] with BATCHSIZE=1 and SEQLEN=1
@@ -66,7 +70,7 @@ with tf.Session() as sess:
 
         # Recommended: topn = 10 for intermediate checkpoints, topn=2 or 3 for fully trained checkpoints
 
-        c = my_txtutils.sample_from_probabilities(yo, topn=2)
+        c = my_txtutils.sample_from_probabilities(yo, topn=10)
         y = np.array([[c]])  # shape [BATCHSIZE, SEQLEN] with BATCHSIZE=1 and SEQLEN=1
         c = chr(my_txtutils.convert_to_alphabet(c))
         print(c, end="")

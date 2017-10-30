@@ -1,10 +1,10 @@
-# tensorflow-text-generator
+# tensorflow-text-generation
 <img src="https://github.com/koflerm/tensorflow-shakespeare-poem-generator/blob/master/text.png?raw=true"/>
 </br>
 generates new poem using a Tensorflow RNN
 Read more about it on  Medium: https://medium.com/@m_ko/deep-learning-with-tensorflow-part-3-music-and-text-generation-370cf37bb071
 
-The basis of this project comes from Martin Gorner, I just added a small portion to it.
+The basis of this project comes from Martin Gorner and Matteo Kofler.
 Original project: https://github.com/martin-gorner/tensorflow-rnn-shakespeare
 
 Code for the Recurrent Neural Network in the presentation "Tensorflow and deep learning - without a PhD, Part 2" from Google. 
