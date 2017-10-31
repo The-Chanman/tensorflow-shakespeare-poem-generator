@@ -1,0 +1,22 @@
+Epoch 0:
+VALIDATION STATS:                                  loss: 4.35610,       accuracy: 0.14957
+
+┌───────────────────────────────────Generating random text from learned state───────────────────────────────────┐
+ttaossWi esooriaiaetoi onoatetsr oAtstetnsrrrogstggsi  aiiiee t trernttaionAooAAotsoa osoaoA a iAerasoo rasgrA o se aeneeia osaoirA  r son iti i  cortrc rroiira reniIiA ttonrniAssnnoAiees sAsenonaeoorAAetooenA ae ee osg iingiaotistsinsnrtceceaietatoA r nAnAaaAesaeAaroisr  onAoanAeeao ee toiiaisgoiesaearn  i   ocaeA  ni one i eatatat r rIieAaerin nnoIeeoArri tosAaeAoioaAartsoiAassAr aeninsArtatetna A te i rtane  oA rragrAaIeraAeao ioAsrseoAo AriatooottneAenA tAtiAstn nrnes ggsriiergnenntnAetaeA siA itenioreni eoiri s Aaosae aessa sa  A  isA  eri raenrrAg o iiIaroioIas trt ttaaee i otAe tee trn etrnitAigage AArearAooniea asesa ts   is s oa ArAioan g aginog rrariiAorgin IIr  a Irier Arti ao  tAr ir nAIa  neeeAeatini nAiiioisitstneaAoe esaoaartAeoaiA nsagsar aAsia roteisiea  aiet oi  nist i aacaAttA nAiaeAieoaatsiog iaanietit orAsstsAresnnioiaisrnrtettns aAnnoAsiaoriAi   eatnnrteossseroa groenre  gr tr or egAaa rraion goeo io rn irttAotaaIotinrt ne ige otoaeaii ar A atgar e  anerireA ga ae
+└───────────────────────────────────────────────End of generation───────────────────────────────────────────────┘
+
+Epoch 8:
+
+VALIDATION STATS:                                  loss: 1.30683,       accuracy: 0.62676
+
+┌───────────────────────────────────Generating random text from learned state───────────────────────────────────┐
+ally, where he worked as an an ancentered digical experience in the world on products, she consimer to developides and experience in the design of projects that complexed a consultant consumer products to development of product and design and international communities.
+Sin experteded her work and social sectors for consultant and design that technologies an an interaction design and international classics and product and digital design and consultance and the career of digital product design, and a partnor of the design and communications and technology. He is cas by to enjoys to help theirecare of projects that also helped the design of projects and social strategies for the insights of designing the design and consumer products to service design and communities.
+She has a bachglor's in Industries in Indistries and a Baster' of International Design at IDEO Sam Francisco. She has a presed her that create a companies of concepts and services, she hos teaching the design to community tha
+└───────────────────────────────────────────────End of generation───────────────────────────────────────────────┘
+
+┌─────────────────────────────────Taking generated text and running spell check─────────────────────────────────┐
+ally, where he worked as an an a centered digital experience in the world on products, she consider to develop ideas and experience in the design of projects that complexed a consultant consumer products to development of product and design and international communities.
+Sin expected her work and social sectors for consultant and design that technologies and an interaction design and international classics and product and digital design and consultants and the career of digital product design, and a partner of the design and communications and technology. He is cast by to enjoys to help their care of projects that also helped the design of projects and social strategies for the insights of designing the design and consumer products to service design and communities.
+She has a bachelor's in Industries in Industries and a Baster' of International Design at IDEO San Francisco. She has a pressed her that create a companies of concepts and services, she hos teaching the design to community the
+└───────────────────────────────────────────────End of generation───────────────────────────────────────────────┘

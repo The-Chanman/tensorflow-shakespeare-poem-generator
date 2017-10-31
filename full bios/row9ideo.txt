@@ -1,0 +1,4 @@
+Lauren Shapiro
+Lauren Shapiro is a Software Developer at IDEO. She loves to create and enjoys expanding her toolset by working with new technologies.
+Before IDEO, Lauren spent time at Microsoft and Apple (as an intern) and worked at the education company Knewton. She has created full-stack web applications, worked on native mobile apps, and produced countless scripts to make life easier and/or more fun. Most recently Lauren has been messing around with React, React Native, Django, and Node.
+Outside of work, Lauren enjoys digital illustration and watching Master Chef Jr.

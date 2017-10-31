@@ -46,7 +46,7 @@ learning_rate = 0.001  # fixed learning rate
 dropout_pkeep = 0.8    # some dropout
 
 # load data, either shakespeare, or the Python source of Tensorflow itself
-shakedir = "shakespeare/*.txt"
+shakedir = "full bios/*.txt"
 #shakedir = "../tensorflow/**/*.py"
 codetext, valitext, bookranges = txt.read_data_files(shakedir, validation=True)
 
@@ -166,7 +166,7 @@ for x, y_, epoch in txt.rnn_minibatch_sequencer(codetext, BATCHSIZE, SEQLEN, nb_
         validation_writer.add_summary(smm, step)
 
     # display a short text generated with the current weights and biases (every 150 batches)
-    if step // 3 % _50_BATCHES == 0:
+    if step // 1 % _50_BATCHES == 0:
         txt.print_text_generation_header()
         ry = np.array([[txt.convert_from_alphabet(ord("K"))]])
         rh = np.zeros([1, INTERNALSIZE * NLAYERS])
@@ -178,7 +178,7 @@ for x, y_, epoch in txt.rnn_minibatch_sequencer(codetext, BATCHSIZE, SEQLEN, nb_
         txt.print_text_generation_footer()
 
     # save a checkpoint (every 500 batches)
-    if step // 10 % _50_BATCHES == 0:
+    if step // 1 % _50_BATCHES == 0:
         saved_file = saver.save(sess, 'checkpoints/rnn_train_' + timestamp, global_step=step)
         print("Saved file: " + saved_file)
 
