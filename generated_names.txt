@@ -1,4 +1,4 @@
-Hi there, this a generated output that are trained on IDEO Bios. have fun! 
+Hi there, this a generated output that are trained on IDEO project names. have fun! 
 
 eloictay
 SC ISPON Workshop
