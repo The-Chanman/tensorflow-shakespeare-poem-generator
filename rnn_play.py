@@ -42,7 +42,7 @@ pythonA1 = "checkpoints/rnn_train_1495458538-1200000"  # some function calls wit
 pythonA2 = "checkpoints/rnn_train_1495458538-10200000"  # starts looking Tensorflow Python, nested () and [] not perfect yet
 pythonB10 = "checkpoints/rnn_train_1495458538-201600000"  # can even recite the Apache license
 
-testing = "checkpoints/rnn_train_1508956033-51000000"
+testing = "checkpoints/rnn_train_1509487419-28200000"
 
 # use topn=10 for all but the last one which works with topn=2 for Shakespeare and topn=3 for Python
 #author = shakespeareB10
@@ -51,7 +51,7 @@ author = testing
 ncnt = 0
 with tf.Session() as sess:
 #    new_saver = tf.train.import_meta_graph('checkpoints/rnn_train_1495455686-0.meta')
-    new_saver = tf.train.import_meta_graph('checkpoints/rnn_train_1508956033-0.meta')
+    new_saver = tf.train.import_meta_graph('checkpoints/rnn_train_1509487419-0.meta')
     new_saver.restore(sess, author)
     x = my_txtutils.convert_from_alphabet(ord("L"))
     x = np.array([[x]])  # shape [BATCHSIZE, SEQLEN] with BATCHSIZE=1 and SEQLEN=1
@@ -59,9 +59,9 @@ with tf.Session() as sess:
     # initial values
     y = x
     h = np.zeros([1, INTERNALSIZE * NLAYERS], dtype=np.float32)  # [ BATCHSIZE, INTERNALSIZE * NLAYERS]
-    file = open("generated_output.txt", "w")
-    file.write("Hi there, this a generated output from a RNN. have fun! \n\n")
-    for i in range(10000):
+    file = open("generated_descriptions.txt", "w")
+    file.write("Hi there, this a generated output that are trained on IDEO Bios. have fun! \n\n")
+    for i in range(200000):
         yo, h = sess.run(['Yo:0', 'H:0'], feed_dict={'X:0': y, 'pkeep:0': 1., 'Hin:0': h, 'batchsize:0': 1})
 
         # If sampling is be done from the topn most likely characters, the generated text
@@ -85,3 +85,48 @@ with tf.Session() as sess:
             file.write("")
             ncnt = 0
     file.close()
+
+
+#        Example output:
+#
+#
+# ACT I
+#
+#
+#
+# SCENE III	An ante-chamber. The COUNT's palace.
+#
+#
+# [Enter CLEOMENES, with the Lord SAY]
+#
+# Chamberlain	Let me see your worshing in my hands.
+#
+# LUCETTA	I am a sign of me, and sorrow sounds it.
+#
+# [Enter CAPULET and LADY MACBETH]
+#
+# What manner of mine is mad, and soon arise?
+#
+# JULIA	What shall by these things were a secret fool,
+# That still shall see me with the best and force?
+#
+# Second Watchman	Ay, but we see them not at home: the strong and fair of thee,
+# The seasons are as safe as the time will be a soul,
+# That works out of this fearful sore of feather
+# To tell her with a storm of something storms
+# That have some men of man is now the subject.
+# What says the story, well say we have said to thee,
+# That shall she not, though that the way of hearts,
+# We have seen his service that we may be sad.
+#
+# [Retains his house]
+# ADRIANA	What says my lord the Duke of Burgons of Tyre?
+#
+# DOMITIUS ENOBARBUS	But, sir, you shall have such a sweet air from the state,
+# There is not so much as you see the store,
+# As if the base should be so foul as you.
+#
+# DOMITIUS ENOY	If I do now, if you were not to seek to say,
+# That you may be a soldier's father for the field.
+#
+# [Exit]
